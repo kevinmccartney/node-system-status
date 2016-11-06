@@ -1,0 +1,14 @@
+{
+  "dependencies": {},
+  "name": "node-system-status",
+  "version": "0.0.1",
+  "description": "A small Node.js script to grab a screenshot of a system's status.",
+  "main": "index.js",
+  "author": "Kevin McCartney <hello@kevinmccartney.is>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
