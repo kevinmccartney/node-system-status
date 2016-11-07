@@ -2,8 +2,9 @@ const util = require('util');
 const os = require('os');
 const console = require('console');
 const moment = require('moment');
+const bytes = require('bytes');
 
-const time = () => {
+const reportTime = () => {
     return 'Report generated at ' + moment().format('MMMM Do YYYY, H:mm:ssa');
 };
 
@@ -18,10 +19,17 @@ const uptime = () => {
     return uptime;
 }
 
+const memory = () => {
+    let memFree = bytes(os.freemem());
+    let memTotal = bytes(os.totalmem());
+    return memFree + '/' + memTotal;
+};
+
 const main = () => {
     return {
         "uptime": uptime(),
-        "time": time()
+        "memFree": memory(),
+        "reportTime": reportTime()
     };
 };
 
