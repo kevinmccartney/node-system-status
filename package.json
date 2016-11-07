@@ -1,5 +1,7 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.15.2"
+  },
   "name": "node-system-status",
   "version": "0.0.1",
   "description": "A small Node.js script to grab a screenshot of a system's status.",

@@ -1,7 +1,12 @@
-import 'console';
+const console = require('console');
+const moment = require('moment');
 
-const helloWorld = () => {
-    console.log("Hello, world!");
+const time = () => {
+    return 'Report generated at ' + moment().format('MMMM Do YYYY, H:mm:ssa');
 };
 
-helloWorld();
+const main = () => {
+    return time();
+};
+
+console.log(main());
